@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio | Video Editor</title>
+
+    <!-- 1. DaisyUI CSS (MUST BE before Tailwind script) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- 2. Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom font import for a modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            /* background-color: #0d1117; - DaisyUI handles this via data-theme="dark" */
+        }
+
+        /* Utility class to make YouTube iframes fully responsive (16:9 ratio) */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            /* Match Tailwind's rounded-lg */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<!-- Apply DaisyUI's dark theme and text color -->
+
+<body class="text-base-content" data-theme="dark">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+
+        <!-- Header and Main CTA Section -->
+        <header class="text-center py-16 md:py-24 space-y-6">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+                Unlock Explosive Growth
+                <span class="block text-primary mt-2">With Editing That Works.</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-base-content max-w-3xl mx-auto">
+                Ready to scale your content?
+            </p>
+            <!-- Using DaisyUI button classes (btn btn-primary) -->
+            <a href="#contact"
+                class="btn btn-primary btn-lg rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Work with [Prince Shahriar]!
+            </a>
+
+            <div class="mt-8">
+                <!-- Ensure you replace the 'src' with a stable link to your image -->
+                <img src="https://scontent.fdac157-1.fna.fbcdn.net/v/t39.30808-6/544986855_24567946636201475_4629540520030487987_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGQ7L21pq2RxCbDWWlNRYKWN9KjjYHNF0U30qONgc0XRXPH8YYN3a-u91HPFHL3JEx9KSc4_eV9sdm1NElVmDW8&_nc_ohc=K1apgkvvaoEQ7kNvwE8e1MR&_nc_oc=AdmSKc6owwZP51yWACnfJtnzK0LvIQh76cDm8VU1YbpfmjdXHZbtrlMxwF-xeDD8dbw&_nc_zt=23&_nc_ht=scontent.fdac157-1.fna&_nc_gid=1rltOBEl3KU2kSu6iPIXug&oh=00_AfdOcJ_skB2ZqoZ3XskwEg46UDWkTlJu7-86gxp8IX3OTw&oe=690568F7"
+                    alt="Your Profile Picture"
+                    class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-primary shadow-lg">
+                <p class="text-md text-gray-400 mt-2">Experienced Video Editor</p>
+            </div>
+        </header>
+
+        <!-- Featured Work Showcase -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10 border-b border-base-content pb-4">Featured Work Showcase
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <!-- Video 1 -->
+                <div class="bg-base-200 p-4 rounded-xl shadow-2xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/QyYYvrn9Whw" title="YouTube video player 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p class="text-center mt-3 text-base-content font-semibold">Project Title: Oil's Downfall</p>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-base-200 p-4 rounded-xl shadow-2xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/y4dXxtfdYMQ" title="YouTube video player 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p class="text-center mt-3 text-base-content font-semibold">Project Title: PETA Exposed</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Video 3 -->
+                <div class="bg-base-200 p-4 rounded-xl shadow-2xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/Ie0A94REaYw" title="YouTube video player 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p class="text-center mt-3 text-base-content font-semibold">Project Title: Hitler's Heirs</p>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="bg-base-200 p-4 rounded-xl shadow-2xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/leOFzpgnlyI" title="YouTube video player 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p class="text-center mt-3 text-base-content font-semibold">Project Title: Dreamliner Flaws</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Clients/Collaborators Section -->
+        <section class="py-16 md:py-20 text-center bg-base-300 rounded-3xl shadow-inner mb-20">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-12">I've worked with:</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+
+                <!-- Client 1 -->
+                <div
+                    class="flex flex-col items-center p-4 bg-base-200 rounded-lg transition hover:bg-base-100 shadow-xl">
+                    <!-- Added consistent sizing for logos -->
+                    <img src="https://yt3.googleusercontent.com/30kbeaZRkwiUHl3PxMPYLBqo6Hov1NCMJr0CkCF9Rk8rk1RjfT2A7Ved_rrFbDua5sDnzpUxfg=s1280"
+                        alt="ABLAZE logo" class="w-16 h-16 rounded-full object-cover mb-2 border-2 border-primary">
+                    <p class="text-2xl font-bold text-primary">ABLAZE</p>
+                    <p class="text-base-content text-sm mt-1">527k+ Subs</p>
+                </div>
+
+                <!-- Client 2 -->
+                <div
+                    class="flex flex-col items-center p-4 bg-base-200 rounded-lg transition hover:bg-base-100 shadow-xl">
+                    <!-- Added consistent sizing for logos -->
+                    <img src="https://yt3.googleusercontent.com/_zkRdboyS2ar9TrpbH48e5orCb2fHhXiMyg6H6cPAPR7L4kz7ZdowCcbG2CO9ReZiyADr4hr6qo=s1280"
+                        alt="Balance Of Power logo"
+                        class="w-16 h-16 rounded-full object-cover mb-2 border-2 border-primary">
+                    <p class="text-2xl font-bold text-primary">Balance Of Power</p>
+                    <p class="text-base-content text-sm mt-1">10k+ Subs</p>
+                </div>
+
+                <!-- Client 3 -->
+                <div
+                    class="flex flex-col items-center p-4 bg-base-200 rounded-lg transition hover:bg-base-100 shadow-xl">
+                    <!-- Added consistent sizing for logos -->
+                    <img src="https://yt3.googleusercontent.com/Xiavoowwebmdf9C4VJEiOxsO_p69rGGzL6ZaAghJFlYdByO4HvEH12FVCHFd0gk9GZIs5xJG=s1280"
+                        alt="Neo Discovery logo"
+                        class="w-16 h-16 rounded-full object-cover mb-2 border-2 border-primary">
+                    <p class="text-2xl font-bold text-primary">Neo Discovery</p>
+                    <p class="text-base-content text-sm mt-1">17k+ Subs</p>
+                </div>
+
+                <!-- Client 4 -->
+                <div
+                    class="flex flex-col items-center p-4 bg-base-200 rounded-lg transition hover:bg-base-100 shadow-xl">
+                    <!-- Added consistent sizing for logos -->
+                    <img src="https://yt3.googleusercontent.com/BtYld6PlspZqY0NCKNEkhUWTJAnIUvJVum4Q3ZTUszsiSQrb4vyJis8Ma8DyqW1PV3DeLaXH=s1280"
+                        alt="MayDay Discovery logo"
+                        class="w-16 h-16 rounded-full object-cover mb-2 border-2 border-primary">
+                    <p class="text-2xl font-bold text-primary">MayDay Discovery</p>
+                    <p class="text-base-content text-sm mt-1">5k+ Subs</p>
+                </div>
+            </div>
+
+            <p class="mt-8 text-lg text-gray-400">...and many others!</p>
+        </section>
+
+        <!-- Second Portfolio Video Group (Optional, for more examples) -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10 border-b border-base-content pb-4">More Examples</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Small Video 1 Placeholder -->
+                <div class="bg-base-200 p-3 rounded-xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/PRuzSmwqmiQ" frameborder="0" allowfullscreen
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Small Video 2 Placeholder -->
+                <div class="bg-base-200 p-3 rounded-xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/Vl_V7pzZzsE" frameborder="0" allowfullscreen
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Small Video 3 Placeholder -->
+                <div class="bg-base-200 p-3 rounded-xl">
+                    <div class="video-container">
+                        <!-- Cleaned up embed URL -->
+                        <iframe src="https://www.youtube.com/embed/P8OBbJsTOfc" frameborder="0" allowfullscreen
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- DAISYUI FOOTER COMPONENT -->
+    <footer id="contact" class="footer footer-center p-10 bg-base-200 text-base-content rounded-t-3xl mt-12">
+        <!-- Contact Info -->
+        <div class="mb-4">
+            <h2 class="text-4xl font-extrabold text-primary mb-4">How to hire me:</h2>
+            <p class="text-xl font-semibold">
+                DM me on Discord (Username:
+                <!-- Displaying the username clearly. The 'select-all' utility class makes it easy to copy. -->
+                <span class="text-white hover:text-primary font-bold select-all">princeshahriar_06507</span>)
+                or reach out
+                <!-- ACTION REQUIRED: Replace the 'mailto' link with your actual email address -->
+                via <a href="mailto:princeshahriar1997@gmail.com"
+                    class="link link-hover text-white hover:text-primary font-bold">Email</a>!
+            </p>
+        </div>
+
+        <!-- Social Links (Uses DaisyUI's grid-flow-col for alignment) -->
+        <div class="grid grid-flow-col gap-6">
+            <a href="YOUR_FACEBOOK_LINK" target="_blank" class="text-white hover:text-primary transition duration-200"
+                aria-label="Facebook">
+                <!-- Facebook Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.588-1.333h2.412v-3h-3.376c-3.791 0-4.733 2.091-4.733 4.548v2.452z">
+                    </path>
+                </svg>
+            </a>
+            <a href="YOUR_INSTAGRAM_LINK" target="_blank" class="text-white hover:text-primary transition duration-200"
+                aria-label="Instagram">
+                <!-- Instagram Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.255-.148-4.771-1.69-4.919-4.919-.058-1.265-.069-1.644-.069-4.849 0-3.204.012-3.584.069-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/prince-shahriar-92b92b2a7/" target="_blank"
+                class="text-white hover:text-primary transition duration-200" aria-label="LinkedIn">
+                <!-- LinkedIn Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.513-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div>
+            <p class="text-sm">
+                &copy; 2024 Prince Shahriar Portfolio. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
